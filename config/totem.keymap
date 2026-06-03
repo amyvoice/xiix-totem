@@ -76,6 +76,11 @@
             bindings = <&kp ENTER>;
             key-positions = <18 19>;
         };
+
+        Number1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <0 10>;
+        };
     };
 
     macros {
