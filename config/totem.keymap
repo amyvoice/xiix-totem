@@ -81,6 +81,36 @@
             bindings = <&kp N0>;
             key-positions = <9 19>;
         };
+
+        Backspace1 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <3 4>;
+        };
+
+        Backspace2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        Enter2 {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
+        };
+
+        Enter1 {
+            bindings = <&kp ENTER>;
+            key-positions = <13 14>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <9 7>;
+        };
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
