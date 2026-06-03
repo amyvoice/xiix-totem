@@ -116,19 +116,18 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        M0: M1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&kp N1 &kp N7 &kp N7 &kp N1 &kp N0 &kp N2 &kp N8 &kp N3 &kp N5 &kp N1 &kp N2>;
+            label = "M1";
+        };
+
+        M5: M5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp U &kp N &kp N &kp I &kp W &kp E &kp L &kp L &kp DOT &kp N2 &kp N0 &kp N2 &kp N0>;
+            label = "M5";
         };
     };
 
@@ -227,7 +226,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        adjust_layer {
+        FuncAndMacro {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "ADJ";
@@ -244,10 +243,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &bt BT_CLR_ALL  &trans        &trans          &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans          &trans        &trans          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans          &trans        &trans          &trans  &trans  &trans
+        &sys_reset   &kp F1  &kp F2   &kp F3   &kp F4     &M0     &none   &none   &none   &none
+        &bootloader  &kp F5  &kp F6   &kp F7   &kp F8     &M5     &none   &none   &none   &kp F11
+&trans  &trans       &kp F9  &kp F10  &kp F11  &kp F12    &trans  &none   &none   &kp F3  &kp F10  &trans
+                             &trans   &trans   &trans     &trans  &trans  &trans
             >;
         };
 
