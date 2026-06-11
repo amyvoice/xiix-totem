@@ -108,11 +108,6 @@
             bindings = <&kp DELETE>;
             key-positions = <9 7>;
         };
-
-        layer3 {
-            bindings = <&mo 3>;
-            key-positions = <28 29>;
-        };
     };
 
     behaviors {
