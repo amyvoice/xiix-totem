@@ -115,22 +115,6 @@
         };
     };
 
-    macros {
-        M0: M1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N7 &kp N7 &kp N1 &kp N0 &kp N2 &kp N8 &kp N3 &kp N5 &kp N1 &kp N2>;
-            label = "M1";
-        };
-
-        M5: M5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp U &kp N &kp N &kp I &kp W &kp E &kp L &kp L &kp DOT &kp N2 &kp N0 &kp N2 &kp N0>;
-            label = "M5";
-        };
-    };
-
     behaviors {
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
